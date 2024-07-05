@@ -21,9 +21,15 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
+  # Images
   - assets/images/alerto-logo.png
   - assets/images/alerto-bg.png
   - assets/images/alerto-logo.png
+
+  # Icons
+  - assets/icons/back-arrow-ic.png
+
+
 
 flutter_launcher_icons:
   android: "launcher_icon"

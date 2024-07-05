@@ -1,7 +1,10 @@
+import 'package:Alerto/Pages/3_SignIn.dart';
+import 'package:Alerto/Pages/4_SignUp.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:get/get.dart';
 
 class SignUpOrSignIn extends StatefulWidget {
   const SignUpOrSignIn({super.key});
@@ -71,10 +74,12 @@ class _SignUpOrSignInState extends State<SignUpOrSignIn> {
                             elevation: 2, // Elevation
                           ),
                           onPressed: () {
-                            // Navigate to sign up screen
+                            Get.to(() => const SignIn(),
+                                transition: Transition.rightToLeft,
+                                duration: const Duration(milliseconds: 100));
                           },
                           child: Text(
-                            'SIGN UP',
+                            'SIGN IN',
                             style: GoogleFonts.inter(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
@@ -99,7 +104,9 @@ class _SignUpOrSignInState extends State<SignUpOrSignIn> {
                             elevation: 2, // Elevation
                           ),
                           onPressed: () {
-                            // Navigate to sign up screen
+                            Get.to(() => const SignUp(),
+                                transition: Transition.rightToLeft,
+                                duration: const Duration(milliseconds: 100));
                           },
                           child: Text(
                             'SIGN UP',
